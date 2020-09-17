@@ -8,7 +8,10 @@ import reducer from './reducers';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
-const store = createStore(reducer);
+const store = createStore(
+  reducer,
+  /** Redux DevTools（chrome拡張機能）を使用する際に、記載する*/
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(
   <Provider store={store}>
