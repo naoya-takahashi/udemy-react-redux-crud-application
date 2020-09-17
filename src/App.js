@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function App() {
-  // const greeting = 'Hi Tom!';
-  // const dom = <h1 className='foo'>{greeting}</h1>
-  // return dom;
+/* 関数(function)コンポーネント */
+// function App() {
+const App = () =>{
   return (
     <React.Fragment>
       <label htmlFor='bar'>bar</label>
@@ -11,5 +10,17 @@ function App() {
     </React.Fragment>
   );
 }
+
+// /* クラス(class)コンポーネント */
+// class App extends Component {
+//   render() {
+//     return (
+//       <React.Fragment>
+//         <label htmlFor='bar'>bar</label>
+//         <input type='text' onClick={() => {console.log('im am clicked')}}></input>
+//       </React.Fragment>
+//     )
+//   }
+// }
 
 export default App;
